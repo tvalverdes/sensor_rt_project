@@ -17,7 +17,7 @@ consumer.subscribe([TOPIC])
 
 try:
     while True:
-        msg = consumer.poll(timeout=1.0)
+        msg = consumer.poll()
         if msg is None:
             continue
         if msg.error():
